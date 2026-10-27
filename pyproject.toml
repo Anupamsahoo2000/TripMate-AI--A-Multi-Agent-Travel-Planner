@@ -1,0 +1,17 @@
+[project]
+name = "tripmate-ai-a-multi-agent-travel-planner"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anupam2000", email = "anupamsahoo2000@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+tripmate-ai-a-multi-agent-travel-planner = "tripmate_ai_a_multi_agent_travel_planner:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
