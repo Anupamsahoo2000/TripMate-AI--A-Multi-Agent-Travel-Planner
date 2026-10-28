@@ -11,3 +11,13 @@ TripMate AI is an intelligent, multi-agent travel planning system built with Lan
 - **Airport & Destination Intelligence**: Integrates `airportsdata` and `pycountry` for airport code lookup and location data.
 - **Persistent State & Checkpointing**: Built-in state management using PostgreSQL checkpointing for conversation tracking and workflow resumption.
 - **FastAPI Backend**: High-performance RESTful API powering travel planning endpoints.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language & Package Manager**: Python 3.12+, [uv](https://github.com/astral-sh/uv)
+- **Agent Framework**: LangChain, LangGraph, LangChain-Groq
+- **API Framework**: FastAPI, Uvicorn
+- **Search & Tools**: Tavily Search, AirportsData, PyCountry
+- **Database & Persistence**: PostgreSQL (`psycopg`, `langgraph-checkpoint-postgres`)
