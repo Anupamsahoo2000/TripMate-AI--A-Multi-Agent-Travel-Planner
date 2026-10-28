@@ -52,3 +52,25 @@ TripMate AI is an intelligent, multi-agent travel planning system built with Lan
    TAVILY_API_KEY=your_tavily_api_key
    DATABASE_URL=postgresql://user:password@localhost:5432/tripmate
    ```
+
+---
+
+## 💻 Usage
+
+Run the FastAPI application server locally:
+
+```bash
+uv run uvicorn tripmate_ai_a_multi_agent_travel_planner:app --reload
+```
+
+Once running, interactive API docs are available at:
+- Swagger UI: `http://127.0.0.1:8000/docs`
+- ReDoc: `http://127.0.0.1:8000/redoc`
+
+---
+
+## 🤝 Contributing & License
+
+Contributions, issues, and feature requests are welcome! Feel free to open an issue or pull request.
+
+Distributed under the MIT License.
