@@ -15,7 +15,7 @@ OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 def get_current_weather(city: str):
 
     response = requests.get(
-        "https://api.openweathermap.org/data/2.5/weather",
+        "https://api.openweathermap.org/data/4.0/weather",
         params={
             "q": city,
             "appid": OPENWEATHER_API_KEY,
@@ -43,7 +43,7 @@ def get_current_weather(city: str):
 def get_forecast(city: str):
 
     url = (
-        "https://api.openweathermap.org/data/2.5/forecast"
+        "https://api.openweathermap.org/data/4.0/forecast"
     )
 
     params = {
