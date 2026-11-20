@@ -18,5 +18,4 @@ pycountry>=26.2.16
 python-dotenv>=1.2.4
 requests>=2.34.2
 tavily-python>=0.8.5
-
 uvicorn>=0.54.0
