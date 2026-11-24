@@ -99,11 +99,12 @@ client = MultiServerMCPClient(
         "weather": {
             "transport": "stdio",
 
-            "command": "/media/anupam-sahoo/Drive D/TripMate AI-A Multi Agent Travel Planner/.venv/bin/python",
+            # Use the active Python environment (virtualenv locally, /usr/local/bin/python in container).
+            "command": sys.executable,
 
-            # Uses the weather server inside the current project folder.
+            # Automatically resolve custom_weather_mcp_server.py relative to the project directory.
             "args": [
-                "/media/anupam-sahoo/Drive D/TripMate AI-A Multi Agent Travel Planner/custom_weather_mcp_server.py",
+                str(WEATHER_SERVER_PATH),
             ],
 
             "env": _subprocess_env(
